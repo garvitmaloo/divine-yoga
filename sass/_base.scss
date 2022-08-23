@@ -1,0 +1,33 @@
+// font-family: 'Merriweather Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: $font-primary;
+  font-weight: 500;
+  scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    font-size: 75%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 56.3%;
+  }
+}
+
+body {
+  @media only screen and (max-width: 600px) {
+    body {
+      overflow-x: hidden !important;
+    }
+  }
+}

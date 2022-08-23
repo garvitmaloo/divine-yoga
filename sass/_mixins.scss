@@ -1,0 +1,32 @@
+// Breakpoints -
+
+// Phone: 0 - 620 px
+// Tab-Port: 620 - 900 px
+// Tab-Land: 900 - 1200 px
+// Big Desktops: 1600 px +
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 38.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    @media only screen and (max-width: 100em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans:wght@400;500;600&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="./Assets/favicon.png" />
+    <link rel="stylesheet" href="./comp-css/main.css" />
+
+    <script
+      async
+      src="https://kit.fontawesome.com/e8be5a49bb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Divine Yoga</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="hero">
+        <img
+          src="./Assets/Logo.png"
+          alt="Company Logo"
+          width="65px"
+          height="65px"
+      /></a>
+
+      <button class="btns btns--nav nav-toggle">
+        <i class="fa-solid fa-bars"></i> Menu
+      </button>
+
+      <div class="links-container">
+        <ul class="navlinks">
+          <li class="link">
+            <a href="#programs">Programs</a>
+          </li>
+          <li class="link">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="link">
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li class="link">
+            <a href="#faq">FAQs</a>
+          </li>
+        </ul>
+
+        <button class="btns btns--nav">Sign In</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero" class="section section--hero">
+        <img
+          srcset="
+            ./Assets/hero-image.png       1085w,
+            ./Assets/hero-image-small.png  500w
+          "
+          sizes="(max-width: 620px) 500px, 1085px"
+          src="./Assets/hero-image.png"
+          alt="Hero-Image"
+          width="600px"
+          height="480px"
+        />
+
+        <div class="content--hero">
+          <h1 class="heading--hero">Helping people to get fit and happy.</h1>
+          <h3 class="subhead--hero">
+            Re-discover your inner peace, happiness and overall health in a
+            natural and simplified way.
+          </h3>
+
+          <div class="btns-container">
+            <button class="btns btns-hero btns-hero--1">Browse Programs</button>
+            <button class="btns btns-hero btns-hero--2">Book A Demo</button>
+          </div>
+        </div>
+      </section>
+
+      <br />
+
+      <section id="programs" class="section section--programs">
+        <h4 class="heading--section">Programs</h4>
+        <div class="container" style="margin-top: 5rem">
+          <div class="card">
+            <div class="card--1">
+              <img src="./Assets/fat loss-comp.png" alt="Yoga Pic 1" />
+            </div>
+
+            <div class="gradient-drop gradient-drop--1"></div>
+
+            <h4 class="heading--card heading--card-1">
+              Fat Loss and Weight Management
+            </h4>
+            <p class="description--card">
+              Tired of having fat slabs around your waist? This program is for
+              you where we put together simple and steady efforts, proper
+              nutrition and a healthy lifestyle so that you can enjoy wearing
+              your favourite clothes again.
+            </p>
+            <div class="details--card">
+              <p>3-4 Months</p>
+              <p>Online/Studio</p>
+              <p>3999 /- INR</p>
+            </div>
+
+            <button class="btns btns--program">
+              Know More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="card--2">
+              <img src="./Assets/heart health-comp.png" alt="Yoga Pic 2" />
+            </div>
+            <div class="gradient-drop gradient-drop--2"></div>
+
+            <h4 class="heading--card">Diabetes and Heart Health</h4>
+            <p class="description--card">
+              Enrol in this meticulously designed program to curb diabetes and
+              ensure a healthy heart. Get diagnosed daily and have a major
+              weekly check-up all in one package. After this program, you can
+              have your cake and eat it too.
+            </p>
+            <div class="details--card">
+              <p>3 Months</p>
+              <p>Studio</p>
+              <p>5999 /- INR</p>
+            </div>
+
+            <button class="btns btns--program">
+              Know More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="card">
+            <div class="card--3">
+              <img src="./Assets/meditation-comp.png" alt="Yoga Pic 3" />
+            </div>
+
+            <div class="gradient-drop gradient-drop--3"></div>
+
+            <h4 class="heading--card">Meditation and Mental Health</h4>
+            <p class="description--card">
+              Is mind wandering or overthinking troubling you? We got you
+              covered. Our experts will help you develop an inner peace, stable
+              attention, mindfulness and a sense of fulfilment so that you can
+              live every day happily.
+            </p>
+            <div class="details--card">
+              <p>4-6 Months</p>
+              <p>Online/Studio</p>
+              <p>999/Month</p>
+            </div>
+
+            <button class="btns btns--program">
+              Know More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="container container--2">
+          <div class="card">
+            <div class="card--4">
+              <img src="./Assets/overall health-comp.png" alt="Yoga Pic 4" />
+            </div>
+
+            <div class="gradient-drop gradient-drop--4"></div>
+
+            <h4 class="heading--card">Yoga for Overall Wellness</h4>
+            <p class="description--card">
+              Get all the goodness of traditional yoga in one big program. In
+              this, we walk you through different yoga styles which serves
+              different purpose, step-by-step. Get ready to experience
+              unprecedented fitness.
+            </p>
+            <div class="details--card">
+              <p>6 Months</p>
+              <p>Online/Studio</p>
+              <p>6999 /- INR</p>
+            </div>
+
+            <button class="btns btns--program">
+              Know More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="card">
+            <div class="card--5">
+              <img src="./Assets/arithritis-comp.png" alt="Yoga Pic 1" />
+            </div>
+
+            <div class="gradient-drop gradient-drop--5"></div>
+
+            <h4 class="heading--card">Yoga for Arthritis</h4>
+            <p class="description--card">
+              This program is specifically designed to treat joint pain, to
+              strengthen your joints and muscles and make them flexible. It has
+              helped many people and it can help you too. It just takes a little
+              time and consistent efforts.
+            </p>
+            <div class="details--card">
+              <p>6-8 Months</p>
+              <p>Studio</p>
+              <p>7999 /- INR</p>
+            </div>
+
+            <button class="btns btns--program">
+              Know More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <br />
+
+      <section id="benefits" class="section section--benefits">
+        <h4 class="heading--section">Benefits</h4>
+
+        <div class="main-container">
+          <div class="card-benefits card-benefits--1">
+            <img
+              src="./Assets/nutrition-comp.png"
+              alt="Benefits Image 1"
+              width="528px"
+              height="352px"
+            />
+
+            <div class="contents">
+              <h4 class="heading--benefit">Nutrition Guidance Included</h4>
+              <p class="description--benefit">
+                You need not to go anywhere else to know what to eat and what
+                not to. Get a balanced diet tailored as per your daily routine.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-benefits card-benefits--2">
+            <img
+              src="./Assets/expert-comp.png"
+              alt="Benefits Image 1"
+              width="528px"
+              height="352px"
+            />
+
+            <div class="contents">
+              <h4 class="heading--benefit">
+                Regular check-ups and expert consultation
+              </h4>
+              <p class="description--benefit">
+                You need not to go anywhere else to know what to eat and what
+                not to. Get a balanced diet tailored as per your daily routine.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-benefits card-benefits--3">
+            <img
+              src="./Assets/retreat1-comp.png"
+              alt="Benefits Image 1"
+              width="528px"
+              height="352px"
+            />
+
+            <div class="contents">
+              <h4 class="heading--benefit">Enjoy a retreat to nature</h4>
+              <p class="description--benefit">
+                Spend a stress-free weekend at our lush green campuses in 100+
+                cities all over India. This retreat can help you a lot.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-benefits card-benefits--4">
+            <img
+              src="./Assets/resources-comp.png"
+              alt="Benefits Image 1"
+              width="528px"
+              height="352px"
+            />
+
+            <div class="contents">
+              <h4 class="heading--benefit">Get access to premium resources</h4>
+              <p class="description--benefit">
+                Register in any one of the programs, check-in to our mobile app
+                and get access to premium resources. That is something you would
+                not want to miss.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
+
+      <section id="testimonials" class="section section--testimonials">
+        <h4 class="heading--section">Testimonials</h4>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              style="background-color: gray"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+
+            <button
+              type="button"
+              style="background-color: gray"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+
+            <button
+              type="button"
+              style="background-color: gray"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+
+            <button
+              type="button"
+              style="background-color: gray"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonials-container">
+                <div class="label">
+                  <i class="fa-solid fa-user"></i>Verfied Client
+                </div>
+                <div class="upper-area"></div>
+                <img
+                  src="./Assets/person-1.jpg"
+                  alt="Person 1"
+                  width="175px"
+                  height="175px"
+                />
+                <h1 class="heading--testimonial">Kevin Thompson</h1>
+                <h3 class="subhead--testimonial">Student</h3>
+                <span class="detail detail--1"
+                  ><i class="fa-solid fa-star"></i> Meditation and Mental
+                  Health</span
+                >
+                <span class="detail detail--2"
+                  ><i class="fa-solid fa-location-dot"></i> San Fransico</span
+                >
+                <p class="description--testimonial">
+                  I have been a victim of overthinking so long. I tried so many
+                  meditation techniques that I read on internet but Divine Yoga
+                  helped me to put in the missing piece – correct approach.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="testimonials-container">
+                <div class="label">
+                  <i class="fa-solid fa-user"></i>Verfied Client
+                </div>
+                <div class="upper-area"></div>
+                <img
+                  src="./Assets/person-2.jpg"
+                  alt="Person 2"
+                  width="175px"
+                  height="175px"
+                />
+                <h1 class="heading--testimonial">Mary Kyle</h1>
+                <h3 class="subhead--testimonial">Designer</h3>
+                <span class="detail detail--1"
+                  ><i class="fa-solid fa-star"></i> Fat Loss and Weight
+                  Management</span
+                >
+                <span class="detail detail--2"
+                  ><i class="fa-solid fa-location-dot"></i> Brooklyn</span
+                >
+                <p class="description--testimonial">
+                  I have been trying so hard to get a slim physique since so
+                  long. I never had proper guidance and techniques to achieve my
+                  goal. Then I subscribed to weight management program and now I
+                  am enjoying such a great physique.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="testimonials-container">
+                <div class="upper-area"></div>
+                <img
+                  src="./Assets/person-5.jpg"
+                  alt="Person 3"
+                  width="175px"
+                  height="175px"
+                />
+                <h1 class="heading--testimonial">Rachel Johnson</h1>
+                <h3 class="subhead--testimonial">Business Woman</h3>
+                <span class="detail detail--1"
+                  ><i class="fa-solid fa-star"></i> Yoga for Overall
+                  Wellness</span
+                >
+                <span class="detail detail--2"
+                  ><i class="fa-solid fa-location-dot"></i> Miami</span
+                >
+                <p class="description--testimonial">
+                  My neighbour suggested me to join the Overall health program
+                  of this company and I could see the results within first week.
+                  The best part: Food guidance and that too, as per your
+                  lifestyle.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="testimonials-container">
+                <div class="label">
+                  <i class="fa-solid fa-user"></i>Verfied Client
+                </div>
+                <div class="upper-area"></div>
+                <img
+                  src="./Assets/person-3.jpg"
+                  alt="Person 4"
+                  width="175px"
+                  height="175px"
+                />
+                <h1 class="heading--testimonial">Chris R.</h1>
+                <h3 class="subhead--testimonial">Architect</h3>
+                <span class="detail detail--1"
+                  ><i class="fa-solid fa-star"></i> Diabetes and Heart
+                  Health</span
+                >
+                <span class="detail detail--2"
+                  ><i class="fa-solid fa-location-dot"></i> Los Angeles</span
+                >
+                <p class="description--testimonial">
+                  Yoga helped me treat an early-stage type-2 diabetes. Lots of
+                  thanks to the team for the efforts they put on their customers
+                  and work whole heartedly. Blessings!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <br />
+
+      <section id="faq" class="section section--faq">
+        <h4 class="heading--section">FAQs</h4>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Is there any refund policy?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Yes. If you enroll in a program and you don't like it or you
+                change your mind, you can apply for a refund within 1 week of
+                registration. We will ensure you a full refund within 3 working
+                days. Your money will be credited in the same account through
+                which you paid for the program and you will be informed about it
+                through an e-mail and a SMS.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Are there any extra charges for accomodation in studio?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Yes. There are nominal charges for accomodation which include 5
+                meals (3 main meals and 2 snacks). Studio accomodation is
+                available only for weekends. We are working on providing
+                accomodation 365 days a year. Accomodation allotment is also
+                subjected to availability at a particular studio. We charge 999
+                /- INR per night.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What are the modes of payment?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                There are different modes of payment available. You can pay
+                through credit/debit cards (VISA, Mastercard, RuPay), UPI, Net
+                Banking, Mobile Wallets (PayTM and AmazonPay) and cheques as
+                well. As soon as we receive the payment, we will mail you an
+                invoice and subscribe to the respective program.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                What are timings and duration of sessions?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Each program has been designed to be conducted on different
+                timings. You can choose from a variety of timings depending on
+                your daily routine. Each day, there are 5 slots for each program
+                and the duration of each session is around 2 hours. Most
+                preferred slots are 6AM to 8AM and 7AM to 9AM.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
+
+      <section class="banner">
+        <div class="content-container">
+          <h1 class="heading--banner">Know More About Us</h1>
+          <button class="btns btns--program btns--banner">About Us</button>
+        </div>
+        <div class="grid-container">
+          <img
+            src="./Assets/sample-1.jpg"
+            alt=""
+            class="img--1"
+            height="160px"
+            width="160px"
+          />
+          <img
+            src="./Assets/sample-5.jpg"
+            alt=""
+            class="img--2"
+            height="250px"
+            width="160px"
+          />
+          <img
+            src="./Assets/sample-8.jpg"
+            alt=""
+            class="img--3"
+            height="160px"
+            width="335px"
+          />
+          <img
+            src="./Assets/sample-10.jpg"
+            alt=""
+            class="img--4"
+            height="80px"
+            width="165px"
+          />
+          <img
+            src="./Assets/sample-9.jpg"
+            alt=""
+            class="img--5"
+            height="80px"
+            width="80px"
+          />
+          <img
+            src="./Assets/sample-6.jpg"
+            alt=""
+            class="img--6"
+            height="165px"
+            width="250px"
+          />
+          <img
+            src="./Assets/sample-7.jpg"
+            alt=""
+            class="img--7"
+            height="250px"
+            width="250px"
+          />
+          <img
+            src="./Assets/sample-4.jpg"
+            alt=""
+            class="img--8"
+            height="165px"
+            width="165px"
+          />
+        </div>
+      </section>
+    </main>
+    <br />
+
+    <footer class="footer">
+      <div class="footer--programs">
+        <h4 class="heading--footer">Programs</h4>
+
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a href="#programs">Fat loss and Weight Management</a>
+          </li>
+          <li class="footer-link">
+            <a href="#programs">Diabetes and Heart Health</a>
+          </li>
+          <li class="footer-link">
+            <a href="#programs">Meditation and Mental Health</a>
+          </li>
+          <li class="footer-link">
+            <a href="#programs">Yoga for Overall Wellness</a>
+          </li>
+          <li class="footer-link">
+            <a href="#programs">Yoga for Arthritis</a>
+          </li>
+
+          <li class="footer-link to-blogs">
+            <a href="./construction.html" target="_blank">Blogs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer--about">
+        <h4 class="heading--footer">About Us</h4>
+
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a href="#">About Us</a>
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html">History</a>
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html">Our Values</a>
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html">Our Team</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer--policies">
+        <h4 class="heading--footer">Policies</h4>
+
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html"
+              >Terms and Conditions</a
+            >
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html">Disclaimer</a>
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <h4 class="heading--footer support">Customer Support</h4>
+
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html"
+              ><i style="margin-right: 0.3rem" class="fa-solid fa-envelope"></i
+              >contact@divineyoga.com</a
+            >
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html"
+              ><i style="margin-right: 0.3rem" class="fa-solid fa-phone"></i
+              >424-520-4342</a
+            >
+          </li>
+          <li class="footer-link">
+            <a target="_blank" href="./construction.html"
+              ><i style="margin-right: 0.3rem" class="fa-solid fa-user-tag"></i
+              >1800 111 2222</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer--contact">
+        <h4 class="heading--footer">Contact</h4>
+
+        <ul class="footer-links">
+          <li class="footer-link">
+            Head Quarters: 4747, Jarsiville Road, Lansing, Michigan
+          </li>
+          <li class="footer-link">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93816.5347998384!2d-84.629467422475!3d42.708660213745624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c01c7f318c37%3A0x4378b62389029d9e!2sLansing%2C%20MI%2C%20USA!5e0!3m2!1sen!2sin!4v1653195898708!5m2!1sen!2sin"
+              width="288"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </li>
+
+          <li class="footer-link socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

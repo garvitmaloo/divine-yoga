@@ -1,0 +1,404 @@
+.btns {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-family: $font-primary;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.3rem;
+  }
+
+  &--nav {
+    background-color: $color-primary;
+    transition: all 200ms linear;
+    border-radius: 1rem;
+
+    @media only screen and (hover: hover) {
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+      }
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &-hero {
+    padding: 1rem 2.5rem;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    transform: none;
+    box-shadow: none;
+
+    &--1 {
+      background-color: $color-primary;
+      transition: all 200ms linear;
+      color: white;
+
+      @media only screen and (hover: hover) {
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 2px 5px -1px rgb(92, 92, 92);
+        }
+      }
+    }
+
+    &--2 {
+      background-color: transparent;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      transition: all 200ms linear;
+
+      @media only screen and (hover: hover) {
+        &:hover {
+          color: white;
+          background-color: $color-primary;
+          transform: translateY(-2px);
+          box-shadow: 0 2px 5px -1px rgb(92, 92, 92);
+        }
+      }
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &--program {
+    position: absolute;
+    bottom: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    background-image: linear-gradient(to right, white 50%, $color-primary 50%);
+    background-size: 210%;
+    background-position: 195%;
+    color: $color-primary;
+    padding: 0.5rem 0.8rem;
+    transition: all 200ms linear;
+
+    @include respond(tab-port) {
+      transform: scale(0.8) translateX(-50%);
+    }
+
+    @media only screen and (hover: hover) {
+      &:hover {
+        background-position: 100%;
+        color: $color-white;
+      }
+    }
+
+    i {
+      margin-left: 0.2rem;
+    }
+  }
+
+  &--banner {
+    position: relative;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  &--blog-card {
+    position: absolute;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    bottom: 0.25rem;
+    left: 0;
+    transform: scale(0.75);
+  }
+}
+
+.nav-toggle {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+
+  i {
+    margin-right: 0.5rem;
+  }
+
+  @include respond(phone) {
+    display: inline-block;
+  }
+}
+
+.card {
+  width: 21rem;
+  height: 32.5rem;
+  box-shadow: 0 2px 6px -1px rgb(189, 189, 189);
+  margin: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  transform: translateY(0);
+  transition: all 200ms linear;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem 1rem 0 0;
+    transform: scale(1);
+    transition: all 200ms linear;
+    z-index: -10;
+    opacity: 75%;
+
+    @include respond(tab-land) {
+      height: 168px;
+      width: 252px;
+    }
+
+    @include respond(tab-port) {
+      width: 189px;
+      height: 126px;
+    }
+  }
+
+  &--1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14rem;
+    width: 21rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 200ms linear;
+  }
+
+  &--2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14rem;
+    width: 21rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 200ms linear;
+  }
+
+  &--3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14rem;
+    width: 21rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 200ms linear;
+  }
+
+  &--4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14rem;
+    width: 21rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 200ms linear;
+  }
+
+  &--5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14rem;
+    width: 21rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 200ms linear;
+  }
+
+  .gradient-drop {
+    height: 14rem;
+    width: 21rem;
+    z-index: 10;
+    transition: all 200ms linear;
+    border-radius: 1rem 1rem 0 0;
+
+    &--1 {
+      background: linear-gradient(
+        to right,
+        rgba(251, 248, 204, 0.8),
+        rgba(253, 228, 207, 0.8)
+      );
+    }
+
+    &--2 {
+      background: linear-gradient(
+        to right,
+        rgba(252, 207, 210, 0.8),
+        rgba(241, 192, 232, 0.8)
+      );
+    }
+
+    &--3 {
+      background: linear-gradient(
+        to right,
+        rgba(207, 186, 240, 0.8),
+        rgba(163, 196, 243, 0.8)
+      );
+    }
+
+    &--5 {
+      background: linear-gradient(
+        to right,
+        rgba(152, 245, 225, 0.8),
+        rgba(185, 251, 192, 0.8)
+      );
+    }
+
+    &--4 {
+      background: linear-gradient(
+        to right,
+        rgba(144, 219, 244, 0.8),
+        rgba(91, 162, 169, 0.8)
+      );
+    }
+  }
+
+  @media only screen and (hover: hover) {
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 2px 6px 0px rgb(147, 147, 147);
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.carousel {
+  width: 50rem;
+  height: 38rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+
+  @include respond(tab-land) {
+    transform: scale(1.15);
+  }
+
+  @include respond(phone) {
+    width: 35rem;
+  }
+
+  &-control-next,
+  &-control-prev {
+    width: 3rem;
+    height: 6rem;
+    top: 42%;
+    bottom: 42%;
+
+    @media only screen and (hover: hover) {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.151);
+        // color: white;
+      }
+    }
+  }
+}
+
+.testimonials-container {
+  position: relative;
+  width: 25rem;
+  height: 31rem;
+  box-shadow: 0px 3px 5px 0px gray;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 2rem auto;
+
+  img {
+    @include respond(tab-land) {
+      height: 125px;
+      width: 125px;
+    }
+
+    @include respond(tab-port) {
+      height: 90px;
+      width: 90px;
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+
+  .upper-area {
+    border-radius: 1rem 1rem 0 0;
+    background: $gradient;
+    width: 100%;
+    height: 7rem;
+    z-index: 10;
+  }
+
+  img {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 6px solid white;
+  }
+}
+
+.accordion {
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 75%;
+  font-family: $font-primary;
+
+  &-button:focus {
+    box-shadow: none;
+  }
+
+  &-button:not(.collapsed) {
+    color: $color-white;
+    background: linear-gradient(
+      to left,
+      rgba(71, 201, 88, 0.75),
+      rgba(13, 139, 89, 0.75)
+    );
+
+    &::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+  }
+
+  @include respond(tab-port) {
+    transform: scale(1.25);
+  }
+}
